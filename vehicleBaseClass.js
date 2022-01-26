@@ -1,4 +1,4 @@
-class Vehicle {
+export class Vehicle {
     constructor(make, model, year, color, mileage) {
         this.make = make;
         this.model = model;
@@ -76,7 +76,7 @@ class Vehicle {
         if (this.numberOfWheels == 8 && 8 == wheels) {
             console.log(this.model + " " + this.make + " is a Truck");
         } else if (this.numberOfWheels == 4 && 4 == wheels) {
-            console.log(this.model + " " + this.make + " is a CAr");
+            console.log(this.model + " " + this.make + " is a Car");
         } else if (this.numberOfWheels == 2 && 2 == wheels) {
             console.log(this.model + " " + this.make + " is a Bike");
         } else {
@@ -86,6 +86,6 @@ class Vehicle {
 }
 
 //This exports things you want to use from this "module", more info in readme
-module.exports = {
-    Vehicle
-}
+// module.exports = {
+//     Vehicle
+// }
